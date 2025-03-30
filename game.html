@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Simulation</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>Game Simulation</h1>
+      <div class="scoreboard">Home: 0 | Away: 0</div>
+    </header>
+    <div class="simulation-panel">
+      <div class="game-state">
+        <span id="stateLabel">Offense</span>
+      </div>
+      <div class="ball-possession">
+        Ball Possession: <strong id="ballPossession">Stephen Curry</strong>
+      </div>
+      <div class="action-options">
+        <!-- Offense Options -->
+        <div id="offense-options" class="options">
+          <button data-action="shoot">
+            Shoot <span class="chance">(70%)</span>
+          </button>
+          <button data-action="pass">
+            Pass <span class="chance">(85%)</span>
+          </button>
+          <button data-action="dribble">
+            Dribble <span class="chance">(90%)</span>
+          </button>
+        </div>
+        <!-- Defense Options -->
+        <div id="defense-options" class="options" style="display: none;">
+          <button data-action="block">
+            Block <span class="chance">(65%)</span>
+          </button>
+          <button data-action="steal">
+            Steal <span class="chance">(60%)</span>
+          </button>
+          <button data-action="tackle">
+            Tackle <span class="chance">(75%)</span>
+          </button>
+        </div>
+      </div>
+      <div class="action-result">
+        <p id="resultText">Choose an action</p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="game.js"></script>
+</body>
+</html>

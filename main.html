@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NBA 2K Style Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="court">
+                
+                <div class="player-spots">
+                    <div class="player absolute-position" data-position="PG">
+                        <img src="images/players/lebron.png" alt="">
+                        <div>Lebron</div>
+                    </div>
+                    <div class="player absolute-position" data-position="SG">
+                        <img src="images/players/lebron.png" alt="">
+                        <div>Lebron</div>
+                    </div>
+                    <div class="player absolute-position" data-position="SF">
+                        <img src="images/players/lebron.png" alt="">
+                        <div>Lebron</div>
+                    </div>
+                    <div class="player absolute-position" data-position="PF">
+                        <img src="images/players/lebron.png" alt="">
+                        <div>Lebron</div>
+                    </div>
+                    <div class="player absolute-position" data-position="C">
+                        <img src="images/players/lebron.png" alt="">
+                        <div>Lebron</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <a  class="btn" id="newTeamBtn">Team Builder</a>
+            <select id="teamSelect" class="team-dropdown">
+                <option value="">Select Team</option>
+            </select>
+            <button id="playBtn" disabled>Play Game</button>
+        </div>
+    </div>
+
+    <!-- Opponent Modal -->
+    <div id="opponentModal" class="modal">
+        <div class="modal-content">
+            <h3>Choose Opponent</h3>
+            <div class="team-list"></div>
+            <button class="close-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

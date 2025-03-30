@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="builder-container">
+        <div class="positions-section">
+            <h2>Positions</h2>
+            <div class="positions-list">
+                <div class="position" data-pos="PG">Point Guard</div>
+                <div class="position" data-pos="SG">Shooting Guard</div>
+                <div class="position" data-pos="SF">Small Forward</div>
+                <div class="position" data-pos="PF">Power Forward</div>
+                <div class="position" data-pos="C">Center</div>
+            </div>
+        </div>
+        
+        <div class="selected-player">
+            <h2>Selected Player</h2>
+            <div id="playerPreview"></div>
+            <button id="addToTeam" disabled>Add to Position</button>
+        </div>
+        
+        <div class="players-section">
+            <h2>Available Players</h2>
+            <div class="players-list"></div>
+            <button id="saveTeam" class="pulse">💾 Save Team</button>
+        </div>
+    </div>
+
+    <script src="teambuilder.js"></script>
+</body>
+</html>
